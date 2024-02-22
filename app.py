@@ -34,3 +34,14 @@ with col2:
   if modo == "Táctil":
     st.write("Lo táctil es fundamental para tu interfaz")
 
+
+st.subheader("Uso de botones")
+if st.button("Presiona el botón"):
+  st.write("Gracias por presionar")
+else:
+  st.write("No has presionado aún")
+
+
+
+  
+
