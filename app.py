@@ -18,21 +18,21 @@ st.subheader("Ahora usemos 2 columnas")
 col1, col2 = st.columns(2)
 
 with col1: 
-  st.subheader("¿Te gustaría recibir notificaciones por correo?")
+  st.subheader("¿Te gustaría recibir novedades por correo?")
   st.write("Será por lo menos 1 mensaje al mes.")
   resp = st.checkbox("")
   if resp:
-      st.write("Correcto")
+      st.write("Gracias, te estaremos contactando")
 
 with col2: 
-  st.subheader("Esta es la segunda columna")
-  modo = st.radio("¿Sobre qué mas te gustaría aprender?", ("Visual", "Auditiva", "Táctil"))
-  if modo == "Visual":
-    st.write("La vista es fundamental para tu interfaz")
-  if modo == "Auditiva":
-    st.write("La audición es fundamental para tu interfaz")
-  if modo == "Táctil":
-    st.write("Lo táctil es fundamental para tu interfaz")
+  st.subheader(¿Cuál es tu género favorito?")
+  modo = st.radio("¿?", ("Fantasía", "Ciencia ficción", "Romance"))
+  if modo == "Fantasía":
+    st.write("Que buenos gustos, lo tomaremos en cuenta.")
+  if modo == "Ciencia ficción":
+    st.write("Gracias, lo tomaremos en cuenta.")
+  if modo == "Romance":
+    st.write("Con que eres romántic@, lo tomaremos en cuenta.")
 
 
 st.subheader("¿Te ha sido útil la información?")
