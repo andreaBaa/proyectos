@@ -4,7 +4,7 @@ from PIL import Image
 st.title("El reseñador")
 st.header("¡Aquí encontrarás próximamente reseñas acerca de tus libros favoritos! .")
 st.write("El contenido se encontrará disponible a partir de abril.")
-image = Image.open("roma.jpg")
+image = Image.open("libros.jpeg")
 
 st.image(image, caption="Reviews")
 
