@@ -9,7 +9,7 @@ image = Image.open("roma.jpg")
 st.image(image, caption="Roma")
 
 
-texto = st.text_input("Escribe algo")
+texto = st.text_input("Escribe algo", "Este es mi texto")
 st.write("El texto escrito es", texto)
 
 st.subheader("Ahora usemos 2 columnas")
@@ -35,11 +35,11 @@ with col2:
     st.write("Lo táctil es fundamental para tu interfaz")
 
 
-st.subheader("Uso de botones")
-if st.button("Presiona el botón"):
-  st.write("Gracias por presionar")
+st.subheader("¿Te ha sido útil la información?")
+if st.button("Sí"):
+  st.write("Gracias por tu valoración 😊")
 else:
-  st.write("No has presionado aún")
+  st.write("Cuéntanos tu opinión")
 
 
 
