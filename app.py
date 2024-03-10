@@ -35,11 +35,11 @@ with col2:
     st.write("Con que eres romántic@, lo tomaremos en cuenta.")
 
 
-st.subheader("¿Te ha sido útil la información?")
+st.subheader("¿Llama tu atención esta página?")
 if st.button("Sí"):
   st.write("Gracias por tu valoración 😊")
 else:
-  st.write("Cuéntanos tu opinión")
+  st.write("Nos ayudaría tu opinión.")
 
 
 
