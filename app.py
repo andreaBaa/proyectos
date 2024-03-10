@@ -24,7 +24,7 @@ with col1:
 
 with col2: 
   st.subheader("¿Cuál es tu género favorito?")
-  modo = st.radio("¿?", ("Fantasía", "Ciencia ficción", "Romance"))
+  modo = st.radio("Es una difícil decisión, lo sé.", ("Fantasía", "Ciencia ficción", "Romance"))
   if modo == "Fantasía":
     st.write("Que buenos gustos, lo tomaremos en cuenta.")
   if modo == "Ciencia ficción":
