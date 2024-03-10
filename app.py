@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title("El reseñador")
-st.header("¡Aquí encontrarás próximamente reseñas acerca de tus libros favoritos! .")
+st.header("¡Aquí encontrarás próximamente reseñas acerca de tus libros favoritos!")
 st.write("El contenido se encontrará disponible a partir de abril.")
 image = Image.open("libros.jpg")
 
@@ -11,8 +11,6 @@ st.image(image, caption="Reviews")
 
 texto = st.text_input("Escribe tu correo electrónico", "correo@gmail.com")
 st.write("Verifica, tu correo es:", texto)
-
-st.subheader("Ahora usemos 2 columnas")
 
 
 col1, col2 = st.columns(2)
