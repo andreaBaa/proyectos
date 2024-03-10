@@ -1,16 +1,16 @@
 import streamlit as st 
 from PIL import Image
 
-st.title("Mi primera App")
-st.header("En este espacio comienzo a desarrollar mis aplicaciones para interfaces multimodales.")
-st.write("Fácilmente puedo realizar backend y frontend")
+st.title("El reseñador")
+st.header("¡Aquí encontrarás próximamente reseñas acerca de tus libros favoritos! .")
+st.write("El contenido se encontrará disponible a partir de abril.")
 image = Image.open("roma.jpg")
 
-st.image(image, caption="Roma")
+st.image(image, caption="Reviews")
 
 
-texto = st.text_input("Escribe algo", "Este es mi texto")
-st.write("El texto escrito es", texto)
+texto = st.text_input("Escribe tu correo electrónico", "correo@gmail.com")
+st.write("Verifica, tu correo es:", texto)
 
 st.subheader("Ahora usemos 2 columnas")
 
@@ -18,15 +18,15 @@ st.subheader("Ahora usemos 2 columnas")
 col1, col2 = st.columns(2)
 
 with col1: 
-  st.subheader("Esta es la primera columna")
-  st.write("Las interfaces multimodales mejoran de usuario")
-  resp = st.checkbox("Estoy de acuerdo")
+  st.subheader("¿Te gustaría recibir notificaciones por correo?")
+  st.write("Será por lo menos 1 mensaje al mes.")
+  resp = st.checkbox("")
   if resp:
       st.write("Correcto")
 
 with col2: 
   st.subheader("Esta es la segunda columna")
-  modo = st.radio("Que modalidad es la principal en tu interfaz", ("Visual", "Auditiva", "Táctil"))
+  modo = st.radio("¿Sobre qué mas te gustaría aprender?", ("Visual", "Auditiva", "Táctil"))
   if modo == "Visual":
     st.write("La vista es fundamental para tu interfaz")
   if modo == "Auditiva":
